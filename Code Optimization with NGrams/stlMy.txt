@@ -1,0 +1,7 @@
+This could take a bit. Be patient.
+Missing ngram: a "never, 1
+Correct solution has 245911 ngrams.
+Incorrect solution has 0 ngrams.
+[1m./ngramstl -i -pi shakespeareAllLines[0m does not produce correct results
+List of ngrams in increasing order of ngram count
+-------------------------------------------------

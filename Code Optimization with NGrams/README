@@ -1,0 +1,17 @@
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=8693724&assignment_repo_type=AssignmentRepo)
+Your code will be graded by compiling the code with the -O2 flag (see makefile)
+and running the code like this:
+
+./ngramfast -g
+
+./ngramstl -g
+
+Note that ngramfast is built from NgramFast.C/NgramFast.h and ngramstl
+is built from NgramSTL.C/NgramSTL.h 
+
+If you create other implementations that you want to be graded 
+instead of these two, you need to indicate those in this file.  
+To add those, you'll need to modify main.C and the makefile to include 
+your other implementations.  Of the implementations that you choose
+to be graded, one should use the C++ STL and the others should not.
+
