@@ -1,0 +1,6 @@
+./sdriver.pl -t trace04.txt -s ./tshref -a "-p"
+#
+# trace04.txt - Run a background job.
+#
+tsh> ./myspin 1 &
+[1] (22687) ./myspin 1 &
