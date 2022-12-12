@@ -1,4 +1,0 @@
-./sdriver.pl -t trace01.txt -s ./tsh -a "-p"
-#
-# trace01.txt - Properly terminate on EOF.
-#
