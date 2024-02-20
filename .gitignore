@@ -164,3 +164,4 @@ CMakeLists.txt.user*
 *.cxxflags
 *.cflags
 
+.DS_Store
