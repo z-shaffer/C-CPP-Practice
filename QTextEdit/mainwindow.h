@@ -3,6 +3,11 @@
 
 #include <QMainWindow>
 
+#include <QFile>
+#include <QFileDialog>
+#include <QTextStream>
+#include <QMessageBox>
+
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
@@ -19,5 +24,6 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    QString currentFile = "";
 };
 #endif // MAINWINDOW_H
