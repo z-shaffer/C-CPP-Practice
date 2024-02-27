@@ -17,9 +17,9 @@ public:
     void setPenColor(const QColor &newColor);
     void setPenWidth(int newWidth);
 
-    bool isModified() const {return modified;}
-    QColor penColor() const {return myPenColor;}
-    int penWidth() const {return myPenWidth;}
+    bool isModified() const { return modified; }
+    QColor penColor() const { return myPenColor; }
+    int penWidth() const { return myPenWidth; }
 
 public slots:
     void clearImage();
@@ -36,7 +36,8 @@ private:
     void drawLineTo(const QPoint &endPoint);
     void resizeImage(QImage *image, const QSize &newSize);
     bool modified;
-    bool scribling;
+    bool scribbling;
+    int myPenWidth;
     QColor myPenColor;
     QImage image;
     QPoint lastPoint;
