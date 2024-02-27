@@ -48,6 +48,7 @@ void MainWindow::save()
     saveFile(fileFormat);
 }
 
+// Setter for pen color
 void MainWindow::penColor()
 {
     QColor newColor = QColorDialog::getColor(scribbleArea->penColor());
@@ -57,6 +58,7 @@ void MainWindow::penColor()
     }
 }
 
+// Setter for pen width
 void MainWindow::penWidth()
 {
     bool ok;
@@ -81,6 +83,7 @@ void MainWindow::createActions()
     openAct = new QAction(tr("&Open"), this);
     openAct->setShortcut(QKeySequence::Open);
     connect(openAct, SIGNAL(triggered()), this, SLOT(open()));
+    // Generate the list of possible image formats
     foreach(QByteArray format, QImageWriter::supportedImageFormats())
     {
         QString text = tr("%1...").arg(QString(format).toUpper());

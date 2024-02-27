@@ -94,6 +94,7 @@ void ScribbleArea::paintEvent(QPaintEvent *event)
     painter.drawImage(dirtyRect, image, dirtyRect);
 }
 
+// Dynamic window resizing
 void ScribbleArea::resizeEvent(QResizeEvent *event)
 {
     if (width() > image.width() || height() > image.height())
@@ -130,6 +131,7 @@ void ScribbleArea::resizeImage(QImage *image, const QSize &newSize)
     *image = newImage;
 }
 
+// Functional if printer support is enabled in cmake
 void ScribbleArea::print()
 {
     QPrinter printer(QPrinter::HighResolution);
