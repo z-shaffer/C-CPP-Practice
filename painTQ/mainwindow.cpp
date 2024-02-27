@@ -44,7 +44,7 @@ void MainWindow::open()
 void MainWindow::save()
 {
     QAction *action = qobject_cast<QAction *>(sender());
-    QByte fileFormat = action->data().toByteArray();
+    QByteArray fileFormat = action->data().toByteArray();
     saveFile(fileFormat);
 }
 
@@ -155,6 +155,7 @@ bool MainWindow::maybeSave()
             return false;
         }
     }
+    return true;
 }
 
 bool MainWindow::saveFile(const QByteArray &fileFormat)
